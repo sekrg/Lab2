@@ -2,6 +2,9 @@ package Pokemons;
 
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
+import Moves.Slam;
+import Moves.Bulldoze;
+import Moves.Facade;
 
 public class Phanpy extends Pokemon {
 

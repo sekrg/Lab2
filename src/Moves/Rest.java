@@ -8,9 +8,13 @@ public class Rest extends StatusMove{
     }
     @Override
     protected void applySelfEffects(Pokemon p){
-        Effect effect = (new Effect()).condition(Status.SLEEP).turns(2);
-        p.setCondition(effect);
-        p.restore();
+        Effect sleep = (new Effect()).condition(Status.SLEEP).turns(2);
+        p.setCondition(sleep);
+        p.setStats(45.0, p.getStat(Stat.ATTACK),
+                p.getStat(Stat.DEFENSE),
+                p.getStat(Stat.SPECIAL_ATTACK),
+                p.getStat(Stat.SPECIAL_DEFENSE),
+                p.getStat(Stat.SPEED));
     }
     @Override
     protected String describe(){

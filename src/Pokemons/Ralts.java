@@ -2,6 +2,8 @@ package Pokemons;
 
 import ru.ifmo.se.pokemon.Pokemon;
 import ru.ifmo.se.pokemon.Type;
+import Moves.Psychic;
+import Moves.Thunderbolt;
 
 public class Ralts extends Pokemon {
 
